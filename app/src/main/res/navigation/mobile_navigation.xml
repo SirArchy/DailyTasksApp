@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.dailytasktest.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_recycleBin"
+        android:name="com.example.dailytasktest.ui.recycleBin.RecycleBinFragment"
+        android:label="@string/menu_recycleBin"
+        tools:layout="@layout/fragment_recyclebin" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.dailytasktest.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_helpFeedback"
+        android:name="com.example.dailytasktest.ui.helpFeedback.HelpFeedbackFragment"
+        android:label="@string/menu_helpFeedback"
+        tools:layout="@layout/fragment_helpfeedback" />
+
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.example.dailytasktest.ui.support.SupportFragment"
+        android:label="@string/menu_support"
+        tools:layout="@layout/fragment_support" />
+</navigation>
