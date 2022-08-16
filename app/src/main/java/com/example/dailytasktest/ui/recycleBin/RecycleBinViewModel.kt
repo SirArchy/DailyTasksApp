@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class RecycleBinViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is recycle bin Fragment"
+        value = "Recycle Bin"
     }
     val text: LiveData<String> = _text
 }

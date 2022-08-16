@@ -44,23 +44,43 @@
         android:id="@+id/nav_recycleBin"
         android:name="com.example.dailytasktest.ui.recycleBin.RecycleBinFragment"
         android:label="@string/menu_recycleBin"
-        tools:layout="@layout/fragment_recyclebin" />
+        tools:layout="@layout/fragment_recyclebin" >
+        <action
+            android:id="@+id/action_nav_recycleBin_pop"
+            app:popUpTo="@id/nav_recycleBin"
+            app:popUpToInclusive="true" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_settings"
         android:name="com.example.dailytasktest.ui.settings.SettingsFragment"
         android:label="@string/menu_settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_nav_settings_pop"
+            app:popUpTo="@id/nav_settings"
+            app:popUpToInclusive="true" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_helpFeedback"
         android:name="com.example.dailytasktest.ui.helpFeedback.HelpFeedbackFragment"
         android:label="@string/menu_helpFeedback"
-        tools:layout="@layout/fragment_helpfeedback" />
+        tools:layout="@layout/fragment_helpfeedback" >
+        <action
+            android:id="@+id/action_nav_helpFeedback_pop"
+            app:popUpTo="@id/nav_helpFeedback"
+            app:popUpToInclusive="true" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_support"
         android:name="com.example.dailytasktest.ui.support.SupportFragment"
         android:label="@string/menu_support"
-        tools:layout="@layout/fragment_support" />
+        tools:layout="@layout/fragment_support" >
+        <action
+            android:id="@+id/action_nav_support_pop"
+            app:popUpTo="@id/nav_support"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

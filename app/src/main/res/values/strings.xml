@@ -21,4 +21,8 @@
     <string name="supportText">Want to support a poor student? You can buy me a coffee using this link:   Or watch an ad:</string>
     <string name="helpFeedbackText">Contact me with any improvement ideas or bugs:</string>
     <string name="completedText">Completed:</string>
+    <string name="tasks">Tasks</string>
+    <string name="open">Open:</string>
+    <string name="checkbox">Checkbox</string>
+    <string name="enter_your_task_here">Enter your task here</string>
 </resources>

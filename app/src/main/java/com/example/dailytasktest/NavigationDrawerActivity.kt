@@ -26,11 +26,11 @@ class NavigationDrawer : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarNavigationDrawer.toolbar)
 
-        binding.appBarNavigationDrawer.addTask.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        binding.appBarNavigationDrawer.addTask.setOnClickListener {
+            
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
+        val navView: NavigationView = binding.navView
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_navigation_drawer) as NavHostFragment
         val navController = navHostFragment.navController

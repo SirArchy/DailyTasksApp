@@ -5,6 +5,10 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_check_24"
+            android:title="@string/tasks" />
+        <item
             android:id="@+id/nav_recycleBin"
             android:icon="@drawable/ic_baseline_delete_24"
             android:title="@string/recycle_bin" />

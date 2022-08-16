@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ToolBar -->
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">#6B6B6B</item>
+        <item name="android:textColorSecondary">#6B6B6B</item>
+        <item name="actionMenuTextColor">#6B6B6B</item>
+    </style>
+</resources>
