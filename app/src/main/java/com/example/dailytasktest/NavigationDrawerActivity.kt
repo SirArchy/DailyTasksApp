@@ -1,17 +1,19 @@
 package com.example.dailytasktest
 import android.os.Bundle
-import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
+import android.view.inputmethod.EditorInfo
+import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.fragment.NavHostFragment
 import com.example.dailytasktest.databinding.ActivityNavigationDrawerBinding
+import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.navigation.NavigationView
+
 
 class NavigationDrawer : AppCompatActivity() {
 
@@ -23,12 +25,33 @@ class NavigationDrawer : AppCompatActivity() {
 
         binding = ActivityNavigationDrawerBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         setSupportActionBar(binding.appBarNavigationDrawer.toolbar)
 
+
         binding.appBarNavigationDrawer.addTask.setOnClickListener {
-            
+            // bottom sheet logic
+            val dialog = BottomSheetDialog(this)
+            val view = layoutInflater.inflate(R.layout.bottom_sheet, null)
+            dialog.setCancelable(true)
+            dialog.setContentView(view)
+            dialog.show()
+
+            val editText = findViewById<EditText>(R.id.enterTaskText)
+            editText.setOnEditorActionListener { v, actionId, event ->
+                if(actionId == EditorInfo.IME_ACTION_SEND){
+                    //Implement checkbox add
+                    dialog.dismiss()
+
+                    true
+                } else {
+                    false
+                }
+            }
+
+
         }
+
+
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navHostFragment =
@@ -42,14 +65,10 @@ class NavigationDrawer : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.activity_navigation_drawer_drawer, menu)
-        return true
-    }
-
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_navigation_drawer)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+    //override fun
 }
