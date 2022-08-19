@@ -17,6 +17,7 @@ Below are some Screenshots of the current look and progress I made so far:
 
 <img src="Screenshots/Screenshot_20220819_105326.png" alt="Start Screen" width="250"/>
 <img src="Screenshots/Screenshot_20220819_111012.png" alt="Bottom Sheet" width="250"/>
+<img src="Screenshots/Screenshot_20220819_111130.png" alt="Navigation Drawer" width="250"/>
 <img src="Screenshots/Screenshot_20220819_105356.png" alt="Recycle Bin Screen" width="250"/>
 <img src="Screenshots/Screenshot_20220819_105406.png" alt="Settings" width="250"/>
 <img src="Screenshots/Screenshot_20220819_105417.png" alt="Help and Feedback" width="250"/>
