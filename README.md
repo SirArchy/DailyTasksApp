@@ -14,7 +14,7 @@ The App is still in Prototype phase and misses a lot of the features I want it t
 
 ## Screenshots
 Below are some Screenshots of the current look and progress I made so far:
-![Start Screen](Screenshots/Screenshot_20220819_105326.png)
+<img src="Screenshots/Screenshot_20220819_105326.png" alt="Start Screen" width="100"/>
 ![Recycle Bin Screen](Screenshots/Screenshot_20220819_105356.png)
 ![Settings](Screenshots/Screenshot_20220819_105406.png)
 ![Help and Feedback](Screenshots/Screenshot_20220819_105417.png)
