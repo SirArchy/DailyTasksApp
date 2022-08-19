@@ -11,15 +11,15 @@ class RecyclerAdapter(private val dataSet: Array<String>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomAdapter.ViewHolder {
         // Create a new view, which defines the UI of the list item
-
+        TODO()
     }
 
     override fun onBindViewHolder(holder: CustomAdapter.ViewHolder, position: Int) {
-
+        TODO()
     }
 
     override fun getItemCount(): Int {
-
+        TODO()
     }
 
 }
