@@ -14,9 +14,9 @@ The App is still in Prototype phase and misses a lot of the features I want it t
 
 ## Screenshots
 Below are some Screenshots of the current look and progress I made so far:
-![Start Screen](https://github.com/SirArchy/DailyTasksApp/tree/master/Screenshot_20220819_105326.png)
-![Recycle Bin Screen](https://github.com/SirArchy/DailyTasksApp/tree/master/Screenshots/Screenshot_20220819_105356.png)
-![Settings]https://github.com/SirArchy/DailyTasksApp/tree/master/Screenshots/Screenshot_20220819_105406.png)
+![Start Screen](Screenshots/Screenshot_20220819_105326.png)
+![Recycle Bin Screen](Screenshots/Screenshot_20220819_105356.png)
+![Settings](https://github.com/SirArchy/DailyTasksApp/tree/master/Screenshots/Screenshot_20220819_105406.png)
 ![Help and Feedback](https://github.com/SirArchy/DailyTasksApp/tree/master/Screenshots/Screenshot_20220819_105417.png)
 ![Support Me](https://github.com/SirArchy/DailyTasksApp/tree/master/Screenshots/Screenshot_20220819_105430.png)
 
